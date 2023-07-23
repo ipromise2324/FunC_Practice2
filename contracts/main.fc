@@ -140,7 +140,7 @@ slice get_owner() method_id {
 
     throw_unless(402, msg_seqno == seqno);
     accept_message();
-    tmp_in_msg~touch(); ;; ??
+    tmp_in_msg~touch(); ;;  If there is no remaining data in the slice, touch() will throw an exception.
     int op = tmp_in_msg~load_uint(32);
     if(op == "selfdestruct"c) {
         cell msg = begin_cell()
