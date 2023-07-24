@@ -3,6 +3,7 @@ This repository contains a TON smart contract implemented in FunC. The contract 
 
 To ensure the contract's functionality and reliability, a suite of tests has been written and is included in "tests/Main.spec.ts".
 
+*.ts files in scripts folder for interacting with the contract on the TON testnet are also included.
 ## Contract Methods
 The smart contract implements five primary methods that interact with `recv_internal()`:
 
@@ -27,6 +28,19 @@ The **Main.spec.ts** file contains a suite of tests that verify the functionalit
 
 ```
 npx blueprint test
+```
+## Interacting with the Contract on TON Testnet
+Scripts for interacting with the contract on the TON testnet are included in the scripts/ directory. These scripts demonstrate how to perform the following operations:
+
+1. Deposit: This script shows how to deposit funds into the smart contract.
+
+2. Withdraw: This script shows how to withdraw funds from the smart contract.
+
+3. Send Message to Owner: This script shows how to send a message to the owner of the smart contract.
+
+To run the scripts, use the following command
+```
+yarn blueprint run
 ```
 ## Project structure
 
