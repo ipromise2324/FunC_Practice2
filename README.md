@@ -4,6 +4,9 @@ This repository contains a TON smart contract implemented in FunC. The contract 
 To ensure the contract's functionality and reliability, a suite of tests has been written and is included in "tests/Main.spec.ts".
 
 *.ts files in scripts folder for interacting with the contract on the TON testnet are also included.
+
+## Contract Address
+https://testnet.tonscan.org/address/EQC62wD816TU-xMqpF75eq2_qM0ESG-GIcaHs15zNL9UnNvt
 ## Contract Methods
 The smart contract implements five primary methods that interact with `recv_internal()`:
 
